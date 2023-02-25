@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript simple Callback function</h2>
+    <p>Two numbers are 8 and 4</p>
+    <span id="sum"></span><br>
+    <span id="sub"></span><br>
+    <span id="mul"></span><br>
+    <span id="div"></span>
+    <script>
+        function sample(a,b,cb){
+            var result = cb(a,b)
+            return result
+        }
+
+        var sum = sample(8,4,function(a,b){
+            return a+b
+        })
+
+        var sub = sample(8,4,function(a,b){
+            return a-b;
+        })
+
+        var mul = sample(8,4,function(a,b){
+            return a*b;
+        })
+
+        var div = sample(8,4,function(a,b){
+            return a/b;
+        })
+
+        document.getElementById("sum").innerHTML = "Summation is : "+sum;
+        document.getElementById("sub").innerHTML = "Subtraction is : "+sub;
+        document.getElementById("mul").innerHTML = "Multiplication is : "+mul;
+        document.getElementById("div").innerHTML = "Division is :"+div;
+    </script>
+</body>
+</html>
