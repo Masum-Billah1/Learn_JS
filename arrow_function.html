@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="sqrt"></p>
+    <script>
+        /*function sum(a,b){
+            return a+b;
+        }*/
+        var sum = (a,b,c)=>a+b+c;
+        document.getElementById("demo").innerHTML=sum(5,7,5);
+
+        /*function sqrt(a){
+            return a*a;
+        }*/
+        var sqrt = a => a*a
+        document.getElementById("sqrt").innerHTML=sqrt(6);
+    </script>
+</body>
+</html>
