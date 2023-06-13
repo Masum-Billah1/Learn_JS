@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tutorial = {
+            "topic": "javascript",
+            "trainer": "vivek",
+            "mode":"online"
+        }
+        document.write("Topic: "+tutorial.topic+"<br>");
+        document.write("trainer: "+tutorial.trainer+"<br>");
+        document.write("mode: "+tutorial.mode+"<br><br>");
+
+        txt = "";
+        var x;
+        for (x in tutorial) {
+            txt+=tutorial[x]+', '
+        }
+        document.write(txt);
+    </script>
+</body>
+</html>
